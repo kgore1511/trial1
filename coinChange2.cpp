@@ -7,6 +7,7 @@ int minWays(int n,int maxSum,int coins[]){
    if(coins[n-1]>maxSum) return minWays(n-1,maxSum,coins);
    return minWays(n-1,maxSum,coins)+minWays(n,maxSum-coins[n-1],coins);
 }
+njhdfbvjhdfv
 
 // find max ways with different denominations
 int main()
