@@ -6,6 +6,7 @@ int getMinSum(int n,int sum,int coins[]){
     if(sum==0) return 0;
     if(coins[n-1]>sum) return getMinSum(n-1,sum,coins);
     else{
+        hello ji
         return min(getMinSum(n-1,sum,coins),1+getMinSum(n,sum-coins[n-1],coins));
     }
 }
